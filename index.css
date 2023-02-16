@@ -300,6 +300,40 @@ section {
     box-shadow: var(--bs);
 }
 
+/* tools section */
+.tools__section {
+    background-color: rgb(17,17,17);
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 00px; */
+
+}
+#tools__container {
+    display: flex;
+    /* height: 400px; */
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 45px 20px;
+}
+.tool__card {
+    width: 70px;
+    height: 70px;
+}
+/* .tools {
+    width: 80px;
+    height: 80px;    
+} */
+.tools {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
 /* portfolio section */
 .my-work {
     background-color: var(--clr-dark);
@@ -334,6 +368,92 @@ section {
     opacity: .5;
 }
 
+/* contact section starts */
+#contact {
+    background-color: rgba(17,17,17,0.9);
+    padding: 2rem;
+    color: var(--clr-light);
+    
+}
+.contactText__container {
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: var(--ff-primary);
+    /* color: var(--clr-accent); */
+}
+.fa-envelope, .fa-location-dot {
+    align-self: center;
+}
+#form__container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--ff-primary);
+}
+.question-location {
+    display: flex;
+    margin: 50px 30px;
+}
+.question-location h3 {
+    font-size: 1.5rem;
+}
+#question-location-holder {
+    width: 30%;
+    text-align: left;
+    line-height: 25px;
+}
+.question-location div {
+    margin-left: 35px;
+}
+.question-location p {
+    font-size: 1.2rem;
+}
+.contact__inputs {
+    padding: 10px;
+    display: block;
+    width: 90%;
+    /* height: 50px; */
+    border: none;
+    outline: none;
+    font-family: var(--ff-primary);
+    resize: none;
+    margin: none; 
+}
+
+#contact__fields {
+    width: 60%;
+    /* padding: 30px; */
+}
+.contact-labels {
+    font-size: 20px;
+    margin-left: auto;
+}
+#name.contact__inputs {
+    margin-right: none;
+}
+#submit-btn {
+    padding: 10px;
+    margin-top: 10px;
+    width: 30%;
+    text-align: center;
+    font-family: var(--fs-primary);
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+#submit-btn:hover {
+    color: var(--clr-light);
+    background-color: var(--clr-accent);
+    cursor: pointer;
+}
+#mail {
+    color: var(--clr-accent);
+}
+/* contact section ends */
+
 /* footer section */
 .footer {
     background: #111;
@@ -352,9 +472,9 @@ section {
 .footer__link:hover, .social-list__link:hover {
     opacity: .7;
 }
-.footer__link:hover {
+/* .footer__link:hover {
     text-decoration: underline;
-}
+} */
 .social-list {
     list-style: none;
     display: flex;
@@ -409,7 +529,7 @@ section {
     }
 }
 /* media query for my work section at breakpoint 950px */
-@media (min-width: 950px) {
+@media (min-width: 1000px) {
     .services {
         display: flex;
         max-width: 1000px;
@@ -417,7 +537,7 @@ section {
     }
 }
 /* media query for about me section at break point 600px */
-@media (min-width: 600px) {
+@media (min-width: 1000px) {
     .about-me {
         display: grid;
         grid-template-columns: 1fr 200px ;
@@ -450,7 +570,7 @@ section {
 
     }
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     
     .nav__list {
         display: none;
@@ -489,5 +609,22 @@ section {
     }
     .intro__img, .section__subtitle--intro, .section__title--services, .about-me__img, .section__subtitle--about {
         z-index: -10;
+    }
+}
+@media (max-width: 1200px) {
+    #form__container {
+        flex-direction: column;
+        /* background-color: chartreuse; */
+        
+    }
+    #question-location-holder {
+        width: 100%;
+    }
+    #contact__fields {
+        width: 90%;
+    }
+    .tool__card {
+        width: 50px;
+        height: 50px;
     }
 }

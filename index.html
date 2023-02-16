@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 <body>
@@ -22,7 +22,7 @@
                 <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
                 <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
                 <li class="nav__item"><a href="#work" class="nav__link">My Works</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -70,6 +70,29 @@
         <img src="./img/IMG_9835.jpg" alt="" class="about-me__img">
     </section>
 
+    <section class="tools__section">
+        <div id="tools__container">
+            <div class="tool__card">
+                <img class="tools" src="/img/tools/htmllogo.png" alt="htmllogo" >
+            </div>
+            <div class="tool__card">
+                <img class="tools" src="/img/tools/csslogo.png" alt="csslogo" >
+            </div>
+            <div class="tool__card">
+                <img class="tools" src="/img/tools/javascriptlogo.png" alt="" >
+            </div>
+            <div class="tool__card">
+                <img class="tools" src="/img/tools/reactlogo.png" alt="" >
+            </div>
+            <div class="tool__card">
+                <img class="tools" src="/img/tools/gitlogo.png" alt="" >
+            </div>
+            <div class="tool__card">
+                <img class="tools" src="/img/tools/figmalogo.png" alt="" >
+            </div>    
+        </div>
+    </section>
+
     <section class="my-work" id="work">
         <h2 class="section__title section__title--work">My Work</h2>
         <p class="section__subtitle section__subtitle--work">A selection from my range of work</p>
@@ -95,6 +118,51 @@
             <a href="#" class="portfolio__item">
                 <img src="./img/portfolio-05.jpg" alt="" class="portfolio__img">
             </a>
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section id="contact">
+        <div id="contact__children">
+
+            <div class="contactText__container">
+                <h1 class="section__header">Contact Me</h1>
+                <p>Please send a message</p>
+                
+            </div>
+            <div id="form__container">
+                <div id="question-location-holder">
+
+                    <div class="question-location">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+
+                            <h3>Direct all questions here</h3>
+                            <p>Send a mail at <br/><span id="mail">ikwumonuemmanuel@gmail.com</span></p>
+                        </div>
+                    </div>
+                    <div class="question-location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+
+                            <h3>Current Location</h3>
+                            <p>Nigeria</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="contact__fields">
+                    <form action="">
+                        <label class="contact-labels" for="name">Fullname</label>
+                        <input class="contact__inputs" type="text" name="" id="name">
+                        <label class="contact-labels" for="email">email</label>
+                        <input class="contact__inputs" type="text" name="" id="email">
+                        <label class="contact-labels" for="message">Message</label>
+                        <textarea class="contact__inputs" name="feedback" id="message" cols="30" rows="10"></textarea>
+                        <input id="submit-btn" type="button" value="Submit">
+                    </form>
+                </div>
+    
+            </div>
         </div>
     </section>
 
